@@ -110,3 +110,9 @@ include "header.php";
 </div>
 <?php
 include "footer.php";
+?>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#sb1').addClass('active');
+    });
+</script>

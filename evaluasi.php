@@ -7,12 +7,12 @@ include "header.php";
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>LRA</h1>
+                    <h1>Evaluasi</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">LRA</li>
+                        <li class="breadcrumb-item active">Evaluasi</li>
                     </ol>
                 </div>
             </div>
@@ -21,87 +21,67 @@ include "header.php";
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="">
                     <div class="card">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-2">
-                                    <img src="dist/img/logo.png" width="50%" alt="" srcset="">
+                                    <img src="dist/img/logo.png" width="30%" alt="" srcset="">
                                 </div>
                                 <div class="col-10">
                                     <h6>
-                                        <center>PEMERINTAH KABUPATEN MOROWALI</center>
+                                        <center>KABUPATEN MOROWALI</center>
                                     </h6>
                                     <h4>
-                                        <center>LAPORAN REALISASI ANGGARAN PENDAPATAN DAN BELANJA DAERAH</center>
+                                        <center>EVALUASI TERHADAP HASIL RKPD</center>
                                     </h4>
                                     <h6>
-                                        <center>TAHUN ANGGARAN 2019</center>
+                                        <center>TAHUN 2019</center>
                                     </h6>
                                 </div>
                             </div>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table>
-                                <tr>
-                                    <td>Kode Rekening</td>
-                                    <td>:</td>
-                                    <td>Urusan Wajib Pelayanan Dasar Pendidikan</td>
-                                </tr>
-                                <tr>
-                                    <td>Uraian</td>
-                                    <td>:</td>
-                                    <td>Dinas Pendidikan dan Kebudayaan</td>
-                                </tr>
-                                <tr>
-                                    <td>Jumlah</td>
-                                    <td>:</td>
-                                    <td>Dinas Pendidikan dan Kebudayaan</td>
-                                </tr>
-                            </table>
-                            <hr>
-
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default"><i class="fa fas fa-plus"></i> Tambah Data LRA</button>
-                            <div style="float: right;">
-                                <form action="" method="post">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter keyword">
-                                        </div>
-                                        <div class="col-4">
-                                            <button type="button" class="btn btn-success"><i class="fa fas fa-search"></i> Cari</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <hr>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" style="overflow: auto;">
                                 <thead>
                                     <tr>
-                                        <th rowspan="2">Kode Rekening</th>
-                                        <th rowspan="2">Uraian</th>
-                                        <th colspan="2">Jumlah</th>
-                                        <th rowspan="2">Fisik</th>
-                                        <th rowspan="2">Bertambah / Berkurang</th>
-                                        <th rowspan="2">%</th>
-                                        <th rowspan="2">Pelaksana</th>
-                                        <th rowspan="2">Sumber Dana</th>
-                                        <th rowspan="2">Lokasi</th>
+                                        <th rowspan="3">No</th>
+                                        <th rowspan="3">Sasaran</th>
+                                        <th rowspan="3">Kode</th>
+                                        <th rowspan="3">Urusan/Bidang Urusan Pemerintahan Daerah dan Program/Kegiatan</th>
+                                        <th rowspan="3">Indikator Kinerja Program (Outcome) / Kegiatan (Output)</th>
+                                        <th rowspan="2" colspan="2">Target RPJMD Kabupaten Morowali Pada Tahun ... (Akhir Periode RPJMD)</th>
+                                        <th rowspan="2" colspan="2">Realisasi Capaian Kinerja RPJMD Kabupaten/kota sampai dengan RKPD Kabupaten/kota Tahun Lalu (n-2) Target</th>
+                                        <th rowspan="2" colspan="2">Target Kinerja dan Anggaran RKPD Kabupaten/kota Tahun Berjalan (Tahun n-1) yang Dievaluasi</th>
+                                        <th colspan="8" colspan="2">Realisasi Kinerja Pada Triwulan</th>
+                                        <th rowspan="2" colspan="2">Realisasi Capaian Kinerja dan Anggaran RKPD Kabupaten/kota yang Dievaluasi</th>
+                                        <th rowspan="2" colspan="2">Realisasi Kinerja dan Anggaran RPJMD Kabupaten/kota s/d Tahun ... (Akhir Tahun Pelaksanaan RKPD Tahun ...)</th>
+                                        <th rowspan="2" colspan="2">Tingkat Capaian Kinerja dan Realisasi Anggaran RPJMD Kabupaten/kota s/d Tahun ... (%)</th>
+                                        <th rowspan="3">Perangkat Daerah Penanggung Jawab</th>
                                     </tr>
                                     <tr>
-                                        <th>Anggaran</th>
-                                        <th>Realisasi</th>
+                                        <th colspan="2">I</th>
+                                        <th colspan="2">II</th>
+                                        <th colspan="2">III</th>
+                                        <th colspan="2">IV</th>
                                     </tr>
                                     <tr>
-                                        <?php
-                                        for ($i = 1; $i <= 10; $i++) { ?>
-                                            <th>
-                                                <center><?= $i; ?></center>
-                                            </th>
-                                        <?php }
-                                        ?>
+                                        <?php for ($i =  1; $i <= 10; $i++) { ?>
+                                            <th>K</th>
+                                            <th>Rp</th>
+                                        <?php } ?>
+                                    </tr>
+                                    <tr>
+                                        <?php for ($i =  1; $i <= 5; $i++) { ?>
+                                            <th><?= $i; ?></th>
+                                        <?php } ?>
+                                        <?php for ($i =  6; $i <= 13; $i++) { ?>
+                                            <th colspan="2"><?= $i; ?></th>
+                                        <?php } ?>
+                                        <th colspan="2">14 = 7 + 13</th>
+                                        <th colspan="2">15 = 14/6 * 100%</th>
+                                        <th>16</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -110,34 +90,21 @@ include "header.php";
                                     <td></td>
                                     <td></td>
                                     <td></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
+                                    <td colspan="2"></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <!-- <tr>
-                                        <td>1.</td>
-                                        <td>Update software</td>
-                                        <td>
-                                            <div class="progress progress-xs">
-                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-danger">55%</span></td>
-                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
                         <!-- /.card-body -->
-                        <div class="card-footer clearfix">
-                            <ul class="pagination pagination-sm m-0 float-right">
-                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                            </ul>
-                        </div>
                     </div>
                     <!-- /.card -->
                 </div>
@@ -265,6 +232,6 @@ include "footer.php";
 ?>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#sb2').addClass('active');
+        $('#sb3').addClass('active');
     });
 </script>

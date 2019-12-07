@@ -33,7 +33,7 @@
   <div class="wrapper">
 
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-dark navbar-purple">
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -89,7 +89,7 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="index.php" class="nav-link ">
+              <a href="index.php" class="nav-link" id="sb1">
                 <!-- active"> -->
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
@@ -99,10 +99,19 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="lra.php" class="nav-link">
+              <a href="lra.php" class="nav-link" id="sb2">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   LRA
+                  <span></span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="evaluasi.php" class="nav-link" id="sb3">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Evaluasi
                   <span></span>
                 </p>
               </a>
